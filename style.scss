@@ -35,7 +35,7 @@ button {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 135px;
+  height: 105px;
   transform: rotateY(180deg);
 }
 
@@ -170,6 +170,7 @@ button {
     }
     .main-left-section {
       width: 60%;
+      margin-top: -3rem;
       @media (max-width: 950px) {
         width: 100%;
       }
@@ -199,9 +200,9 @@ button {
         border-radius: 8px;
         margin-top: 2rem;
         font-size: 18px;
-        transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
         &:hover {
-          transform: rotate(3deg);
+          background: #f4f5f4;
         }
         @media (max-width: 1100px) {
           width: 240px;
@@ -223,7 +224,7 @@ button {
       }
       img {
         @media (max-width: 1440px) {
-          height: 640px;
+          height: 610px;
         }
       }
     }
@@ -231,7 +232,7 @@ button {
 }
 
 .features-section-wrapper {
-  margin: 4rem auto;
+  margin: 8rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -262,7 +263,7 @@ button {
     }
   }
   .features-section {
-    width: 90%;
+    width: 95%;
     height: 100vh;
     position: relative;
     @media (max-width: 950px) {
@@ -295,6 +296,9 @@ button {
       width: 20%;
       right: 5%;
       top: 15%;
+      @media (max-width: 1440px) {
+        right: 3%;
+      }
     }
     .applications {
       position: absolute;
@@ -307,12 +311,18 @@ button {
       width: 20%;
       right: 5%;
       top: 65%;
+      @media (max-width: 1440px) {
+        right: 2%;
+      }
     }
     .outage,
     .applications,
     .usage,
     .accounts,
     .bill {
+      @media (max-width: 1440px) {
+        width: 25%;
+      }
       @media (max-width: 950px) {
         position: relative;
         width: 100%;
@@ -349,9 +359,9 @@ button {
 }
 
 .about-section {
-  height: 80vh;
+  height: 100vh;
   width: 80%;
-  margin: 4rem auto;
+  margin: 6rem auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -417,6 +427,9 @@ button {
       font-size: 42px;
       margin: 0 auto;
     }
+  }
+  span {
+    color: #43d3ab;
   }
   .download-links {
     display: flex;

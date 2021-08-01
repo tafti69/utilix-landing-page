@@ -591,6 +591,18 @@ left: 0;
         width: 332px;
       }
     }
+    #status {
+      width: 400px;
+      height: 60px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      @media (max-width: 650px) {
+        width: 332px;
+      }
+    }
   }
 }
 

@@ -850,6 +850,28 @@ button {
   }
 }
 
+.form-section-wrapper form #status {
+  width: 400px;
+  height: 60px;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+}
+
+@media (max-width: 650px) {
+  .form-section-wrapper form #status {
+    width: 332px;
+  }
+}
+
 footer {
   padding: 2rem 4rem;
   display: -webkit-box;

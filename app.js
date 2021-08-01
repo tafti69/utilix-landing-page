@@ -197,17 +197,36 @@ var data = {
 };
 
 var form = document.getElementById("form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "Thanks for your submission!";
+        status.style.background = "#43d3aa25";
+        status.style.color = "#43d3ab";
+        form.reset()
+        setTimeout(function () {
+          status.style.display = "none";
+        }, 3000)
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form";
+        status.style.background = "#ff3a3046";
+        status.style.color = "#FF3B30";
+        setTimeout(function () {
+          status.style.display = "none";
+        }, 3000)
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
 
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-  alert("Your message was sent");
-  var username = document.getElementById("name").value;
-  console.log(username);
-  var email = document.getElementById("email").value;
-  console.log(email);
-  var comment = document.getElementById("comment").value;
-  console.log(comment);
-});
 
 const btnScrollToTop = document.querySelector(".btn-scroll-to-top");
 

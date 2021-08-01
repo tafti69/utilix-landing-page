@@ -624,7 +624,7 @@
         Do not hesitate to ask something or share your opinion. Just enter your
         name, email and we will get your message.
       </p>
-      <form method="POST" id="form">
+      <form action="https://formspree.io/f/xnqlgvww" method="POST" id="form">
         <div class="fields-display">
           <div class="text-field">
             <label id="nameEl" for="name">Name</label>
@@ -632,13 +632,15 @@
               type="text"
               id="name"
               placeholder="Enter your name"
+              name="name"
               required
             />
           </div>
           <div class="text-field">
             <label id="emailEl" for="email">Email</label>
             <input
-              type="text"
+              name="email"
+              type="email"
               id="email"
               placeholder="Enter your email"
               required
@@ -657,6 +659,7 @@
           ></textarea>
         </div>
         <button type="submit">Send</button>
+        <div id="status"></div>
       </form>
     </div>
     <footer>

@@ -46,64 +46,6 @@ button {
   fill: #ffffff;
 }
 
-// .burger {
-//   display: none;
-//   height: 30px;
-//   width: 30px;
-//   @media (max-width: 950px) {
-//     display: block;
-//   }
-//   div {
-//     height: 3px;
-//     width: 30px;
-//     margin: 5px 0;
-//     background: #fff;
-//   }
-// }
-
-// .menu {
-//   position: fixed;
-//   top: 0;
-//   right: 0;
-//   background: #fbfbfb;
-//   width: 60%;
-//   height: 100vh;
-//   padding: 4rem 1rem;
-//   z-index: 100;
-//   display: none;
-//   transition: 0.3s cubic-bezier(0.19, 1, 0.22, 1);
-//   .close-menu {
-//     height: 30px;
-//     width: 30px;
-//     position: absolute;
-//     right: 12%;
-//     top: 6%;
-//     div {
-//       position: absolute;
-//       height: 3px;
-//       width: 30px;
-//       margin: 5px 0;
-//       background: #43d3ab;
-//       &:nth-child(1) {
-//         transform: rotate(-45deg);
-//       }
-//       &:nth-child(2) {
-//         transform: rotate(45deg);
-//       }
-//     }
-//   }
-//   ul {
-//     display: flex;
-//     flex-direction: column;
-//     text-align: right;
-//     list-style: none;
-//     li {
-//       margin: 1rem;
-//       font-size: 18px;
-//     }
-//   }
-// }
-
 .main-section-wrapper {
   background: #43d3ab;
   color: #fff;
@@ -215,6 +157,7 @@ button {
         border-radius: 8px;
         margin-top: 2rem;
         font-size: 18px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
         transition: 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
         &:hover {
           background: #f4f5f4;
